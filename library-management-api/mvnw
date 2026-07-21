@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+PROJECT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+MAVEN_VERSION=3.9.9
+MAVEN_DIST="$PROJECT_DIR/.mvn/apache-maven-$MAVEN_VERSION"
+
+if [ ! -x "$MAVEN_DIST/bin/mvn" ]; then
+  echo "Downloading Apache Maven $MAVEN_VERSION..."
+  mkdir -p "$PROJECT_DIR/.mvn"
+  curl -fsSL "https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" \
+    | tar -xz -C "$PROJECT_DIR/.mvn"
+fi
+
+exec "$MAVEN_DIST/bin/mvn" "$@"

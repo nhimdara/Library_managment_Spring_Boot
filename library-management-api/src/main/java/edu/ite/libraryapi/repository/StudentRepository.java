@@ -1,0 +1,11 @@
+package edu.ite.libraryapi.repository;
+
+import edu.ite.libraryapi.entity.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+    boolean existsByEmailIgnoreCase(String email);
+    boolean existsByEmailIgnoreCaseAndIdNot(String email, Integer id);
+}
