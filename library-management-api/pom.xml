@@ -18,8 +18,11 @@
     <description>REST API for a library management system</description>
 
     <properties>
-        <java.version>25</java.version>
-        <maven.compiler.release>25</maven.compiler.release>
+        <!-- Spring Boot 3.3 supports Java 17 and its bytecode scanner cannot
+             read classes compiled for Java 25. Keep the build on Boot's
+             baseline so newer installed JDKs still produce compatible files. -->
+        <java.version>17</java.version>
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <dependencies>
