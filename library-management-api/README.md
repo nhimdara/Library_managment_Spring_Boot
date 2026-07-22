@@ -37,7 +37,7 @@ Override those values when necessary:
 ```powershell
 $env:DB_USERNAME="root"
 $env:DB_PASSWORD="your-password"
-$env:DB_URL="jdbc:mysql://localhost:3306/librarymanagementsystem?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+$env:DB_URL="jdbc:mysql://localhost:3306/librarymanagementsystem"
 ```
 
 Hibernate uses `ddl-auto=validate`, so the API checks the existing structure instead of replacing it.
