@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4305369-4dd2-4927-9461-6cf1f3c858bb" name="Changes" comment="" />
+    <list default="true" id="d175f97a-478c-4b11-a08d-fe77d9b7163a" name="Changes" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="173" />
+    <option name="cachedIndexableFilesCount" value="141" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -34,23 +34,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.490646722346046" />
-      <entry key="MS500" value="2.6642101638376623" />
-      <entry key="S2" value="7.144795810783682" />
-      <entry key="S5" value="13.67107844571332" />
-      <entry key="S10" value="19.084789262192242" />
-      <entry key="S30" value="24.96655691834356" />
-      <entry key="S60" value="26.879413653754657" />
-      <entry key="M2" value="28.664643358102868" />
-      <entry key="M5" value="42.24696124938597" />
-      <entry key="M10" value="65.41704040061622" />
-      <entry key="M15" value="79.83048857335784" />
-      <entry key="M30" value="99.93057219540808" />
-      <entry key="H1" value="112.79406851702055" />
-      <entry key="H2" value="120.07894890882093" />
-      <entry key="H4" value="123.95655218162463" />
-      <entry key="D1" value="127.31427442667677" />
-      <entry key="W1" value="127.90174578981599" />
+      <entry key="MS100" value="1.8705699819328678" />
+      <entry key="MS500" value="2.261556723460564" />
+      <entry key="S2" value="5.028511614597656" />
+      <entry key="S5" value="7.709535801119829" />
+      <entry key="S10" value="9.281613823540653" />
+      <entry key="S30" value="14.130667197985183" />
+      <entry key="S60" value="25.675765709987136" />
+      <entry key="M2" value="42.00412036516792" />
+      <entry key="M5" value="59.7263129977561" />
+      <entry key="M10" value="67.69704343216016" />
+      <entry key="M15" value="70.63949603314818" />
+      <entry key="M30" value="73.7376764915753" />
+      <entry key="H1" value="75.34777671144927" />
+      <entry key="H2" value="76.16855342014279" />
+      <entry key="H4" value="76.58293418044143" />
+      <entry key="D1" value="76.93030181629477" />
+      <entry key="W1" value="76.99003852195666" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -72,30 +72,30 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4168179887442331" />
-      <entry key="MS500" value="2.6350397691798864" />
-      <entry key="S2" value="7.110703851391499" />
-      <entry key="S5" value="13.637417483462789" />
-      <entry key="S10" value="19.060390058960863" />
-      <entry key="S30" value="24.955910027142934" />
-      <entry key="S60" value="26.873701237371613" />
-      <entry key="M2" value="28.66162236001455" />
-      <entry key="M5" value="42.24534868440686" />
-      <entry key="M10" value="65.41590833877096" />
-      <entry key="M15" value="79.82960107955154" />
-      <entry key="M30" value="99.93003665175803" />
-      <entry key="H1" value="112.79377154304734" />
-      <entry key="H2" value="120.0787921763086" />
-      <entry key="H4" value="123.95647162395097" />
-      <entry key="D1" value="127.31426068439644" />
-      <entry key="W1" value="127.90174381873818" />
+      <entry key="MS100" value="1.8203353733639458" />
+      <entry key="MS500" value="2.2477902079317387" />
+      <entry key="S2" value="5.016213740980094" />
+      <entry key="S5" value="7.700867118073246" />
+      <entry key="S10" value="9.275991463955034" />
+      <entry key="S30" value="14.127071080463068" />
+      <entry key="S60" value="25.671801979486773" />
+      <entry key="M2" value="42.00056742068839" />
+      <entry key="M5" value="59.72419917264365" />
+      <entry key="M10" value="67.69582954598212" />
+      <entry key="M15" value="70.63864804013899" />
+      <entry key="M30" value="73.73723207445707" />
+      <entry key="H1" value="75.34754919127256" />
+      <entry key="H2" value="76.16843830551933" />
+      <entry key="H4" value="76.58287628111432" />
+      <entry key="D1" value="76.9302921186153" />
+      <entry key="W1" value="76.9900371353997" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3,
+  &quot;associatedIndex&quot;: 4,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3GokgEiNvWSAkMV7MDkyfSXDhtQ" />
+  <component name="ProjectId" id="3GqZORQj7xMgcNiYWyHXZ1Lgiz6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -108,12 +108,11 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/APL RUPP/Final Project APL&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/APL RUPP/Final Project APL/library-management-api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,35 +120,26 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunAnythingCache">
-    <myKeys>
-      <visibility group="Gradle Tasks" flag="true" />
-      <visibility group="Grunt" flag="true" />
-      <visibility group="Gulp" flag="true" />
-      <visibility group="HTTP Requests" flag="true" />
-      <visibility group="Maven Goals" flag="true" />
-      <visibility group="Recent projects" flag="true" />
-      <visibility group="Run Configurations" flag="true" />
-      <visibility group="Run Python file" flag="true" />
-      <visibility group="Run conda command" flag="true" />
-      <visibility group="Run pip command" flag="true" />
-      <visibility group="com.intellij.httpClient.http.request.run.HttpRequestRunAnythingProvider" flag="true" />
-      <visibility group="com.intellij.ide.actions.runAnything.RunAnythingRunConfigurationProvider" flag="true" />
-      <visibility group="com.intellij.ide.actions.runAnything.activity.RunAnythingRecentProjectProvider" flag="true" />
-      <visibility group="com.intellij.lang.javascript.buildTools.grunt.GruntRunAnythingProvider" flag="true" />
-      <visibility group="com.intellij.lang.javascript.buildTools.gulp.GulpRunAnythingProvider" flag="true" />
-      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Npm" flag="true" />
-      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Pnpm" flag="true" />
-      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Yarn" flag="true" />
-      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingCondaProvider" flag="true" />
-      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingFileProvider" flag="true" />
-      <visibility group="com.jetbrains.python.run.runAnything.PyRunAnythingPipProvider" flag="true" />
-      <visibility group="npm" flag="true" />
-      <visibility group="org.jetbrains.idea.maven.execution.MavenRunAnythingProvider" flag="true" />
-      <visibility group="org.jetbrains.plugins.gradle.execution.GradleRunAnythingProvider" flag="true" />
-      <visibility group="pnpm" flag="true" />
-      <visibility group="yarn" flag="true" />
-    </myKeys>
+  <component name="RunManager">
+    <configuration name="LibraryApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="library-management-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.ite.libraryapi.LibraryApiApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ite.libraryapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LibraryApiApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -161,15 +151,36 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f4305369-4dd2-4927-9461-6cf1f3c858bb" name="Changes" comment="" />
-      <created>1784645418345</created>
+      <changelist id="d175f97a-478c-4b11-a08d-fe77d9b7163a" name="Changes" comment="" />
+      <created>1784701026284</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1784645418345</updated>
+      <updated>1784701026284</updated>
     </task>
+    <task id="LOCAL-00001">
+      <option name="closed" value="true" />
+      <created>1784722947048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784722947049</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix">
+      <option name="closed" value="true" />
+      <created>1784722959220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784722959220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
