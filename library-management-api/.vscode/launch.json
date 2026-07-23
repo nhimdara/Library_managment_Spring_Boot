@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-LibraryApiApplication<library-management-api>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "edu.ite.libraryapi.LibraryApiApplication",
+      "projectName": "library-management-api",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
