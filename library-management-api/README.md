@@ -50,6 +50,21 @@ Hibernate uses `ddl-auto=validate`, so the API checks the existing structure ins
 
 The API starts at `http://localhost:8080`.
 
+### Test with Swagger UI
+
+After starting the API, open:
+
+**http://localhost:8080/swagger-ui.html**
+
+Swagger lists every endpoint and fills request bodies with example values. To test one:
+
+1. Expand an endpoint such as `POST /api/books`.
+2. Click **Try it out**.
+3. Edit the example JSON if needed.
+4. Click **Execute** to send the request and view the response.
+
+The raw OpenAPI JSON is available at `http://localhost:8080/v3/api-docs`.
+
 ```powershell
 .\mvnw.cmd test
 ```

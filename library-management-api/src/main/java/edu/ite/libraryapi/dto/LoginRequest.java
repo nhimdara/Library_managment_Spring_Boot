@@ -1,16 +1,22 @@
 package edu.ite.libraryapi.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 
+@Schema(description = "Credentials for an admin or student")
 public class LoginRequest {
     @NotBlank
+    @Schema(description = "Account type", allowableValues = {"ADMIN", "STUDENT"}, example = "ADMIN")
     private String role;
 
+    @Schema(description = "Required when role is ADMIN", example = "admin")
     private String username;
 
+    @Schema(description = "Required when role is STUDENT", example = "1")
     private Integer studentId;
 
     @NotBlank
+    @Schema(example = "12345678")
     private String password;
 
     public String getRole() { return role; }
