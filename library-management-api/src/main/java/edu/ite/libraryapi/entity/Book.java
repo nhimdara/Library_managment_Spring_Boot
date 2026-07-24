@@ -48,7 +48,7 @@ public class Book {
     private int quantity;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "stutus", nullable = false, columnDefinition = "enum('Available','Unavailable')")
+    @Column(name = "stutus", nullable = false, length = 20)
     @Schema(description = "Automatically synchronized from quantity", accessMode = Schema.AccessMode.READ_ONLY)
     private Availability stutus;
 
