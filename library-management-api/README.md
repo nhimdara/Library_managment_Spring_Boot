@@ -1,6 +1,6 @@
 # Assignment 2 — Library Management REST API
 
-This Spring Boot REST API continues the Library Management System from Assignment 1. It connects to and reuses the existing MySQL/MariaDB database without renaming its tables or columns.
+This Spring Boot REST API continues the Library Management System from Assignment 1. It connects to MySQL and can be managed with MySQL Workbench.
 
 ## Assignment 1 database mapping
 
@@ -16,20 +16,22 @@ The original `books.stutus` spelling is intentionally preserved because it exist
 ## Requirements
 
 - Java 17 or newer
-- MySQL 8+ or MariaDB 10.4+
-- The Assignment 1 database named `librarymanagementsystem`
+- MySQL 8+ and, optionally, MySQL Workbench
+- A MySQL user with permission to create or access `librarymanagementsystem`
 - Internet access on the first Maven-wrapper run
 
 ## Database setup
 
-If your Assignment 1 database already exists in phpMyAdmin, keep it and skip the import. Otherwise, import [database/librarymanagementsystem.sql](database/librarymanagementsystem.sql).
+Start MySQL and make sure your user can create databases. By default, the JDBC connection creates the `librarymanagementsystem` database when it does not exist. The application then uses Hibernate to create or update its tables.
 
-The default connection matches Assignment 1:
+The default local connection is:
 
 ```text
+Host: localhost
+Port: 3306
 Database: librarymanagementsystem
 Username: root
-Password: empty
+Password: newpassword
 ```
 
 Override those values when necessary:
@@ -37,10 +39,10 @@ Override those values when necessary:
 ```powershell
 $env:DB_USERNAME="root"
 $env:DB_PASSWORD="your-password"
-$env:DB_URL="jdbc:mysql://localhost:3306/librarymanagementsystem"
+$env:DB_URL="jdbc:mysql://localhost:3306/librarymanagementsystem?createDatabaseIfNotExist=true&serverTimezone=UTC"
 ```
 
-Hibernate uses `ddl-auto=validate`, so the API checks the existing structure instead of replacing it.
+Hibernate uses `ddl-auto=update`, so it creates missing tables and updates the structure without deleting existing data.
 
 ## Run and test
 
@@ -48,13 +50,14 @@ Hibernate uses `ddl-auto=validate`, so the API checks the existing structure ins
 .\mvnw.cmd spring-boot:run
 ```
 
-The API starts at `http://localhost:8080`.
+The API starts at `http://localhost:8081` by default. Set the `SERVER_PORT`
+environment variable to use a different port.
 
 ### Test with Swagger UI
 
 After starting the API, open:
 
-**http://localhost:8080/swagger-ui.html**
+**http://localhost:8081/swagger-ui.html**
 
 Swagger lists every endpoint and fills request bodies with example values. To test one:
 
@@ -63,7 +66,7 @@ Swagger lists every endpoint and fills request bodies with example values. To te
 3. Edit the example JSON if needed.
 4. Click **Execute** to send the request and view the response.
 
-The raw OpenAPI JSON is available at `http://localhost:8080/v3/api-docs`.
+The raw OpenAPI JSON is available at `http://localhost:8081/v3/api-docs`.
 
 ```powershell
 .\mvnw.cmd test

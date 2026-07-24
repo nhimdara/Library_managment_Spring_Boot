@@ -2,10 +2,17 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Spring Boot-LibraryApiApplication<library-management-api>",
+      "name": "LibraryApiApplication",
+      "request": "launch",
+      "mainClass": "edu.ite.libraryapi.LibraryApiApplication",
+      "projectName": "library-management-api"
+    },
+    {
+      "type": "java",
+      "name": "Library Management System (Swing + API)",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "mainClass": "edu.ite.libraryapi.LibraryApiApplication",
+      "mainClass": "edu.ite.libraryapi.swing.LibraryManagementSystem",
       "projectName": "library-management-api",
       "args": "",
       "envFile": "${workspaceFolder}/.env"

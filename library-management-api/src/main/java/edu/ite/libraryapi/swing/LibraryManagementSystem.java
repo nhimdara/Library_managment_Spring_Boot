@@ -1,5 +1,6 @@
 package edu.ite.libraryapi.swing;
 
+import edu.ite.libraryapi.LibraryApiApplication;
 import java.awt.*;
 import java.sql.*;
 import java.text.SimpleDateFormat;
@@ -9,12 +10,19 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
+import org.springframework.boot.SpringApplication;
 
 // --- Database Connection Class ---
 class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/librarymanagementsystem";
-    private static final String USER = "root";
-    private static final String PASSWORD = "";
+    private static final String URL = getSetting(
+            "DB_URL", "jdbc:mysql://localhost:3306/librarymanagementsystem");
+    private static final String USER = getSetting("DB_USERNAME", "root");
+    private static final String PASSWORD = getSetting("DB_PASSWORD", "");
+
+    private static String getSetting(String name, String defaultValue) {
+        String value = System.getenv(name);
+        return value == null || value.isBlank() ? defaultValue : value;
+    }
 
     public static Connection getConnection() throws SQLException {
         try {
@@ -754,6 +762,7 @@ public class LibraryManagementSystem extends JFrame {
     }
 
     public static void main(String[] args) {
+        SpringApplication.run(LibraryApiApplication.class, args);
         SwingUtilities.invokeLater(() -> new LibraryManagementSystem().setVisible(true));
     }
 }
