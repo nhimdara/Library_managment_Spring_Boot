@@ -12,9 +12,9 @@ import javax.swing.table.DefaultTableModel;
 
 // --- Database Connection Class ---
 class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3307/librarymanagementsystems";
+    private static final String URL = "jdbc:mysql://localhost:3306/librarymanagementsystem";
     private static final String USER = "root";
-    private static final String PASSWORD = "NewPassword123";
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
         try {
